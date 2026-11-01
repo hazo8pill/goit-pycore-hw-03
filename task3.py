@@ -28,7 +28,7 @@ def normalize_phone(phone_number: str) -> str:
     """
 
     digits = re.sub(r'\D', '', phone_number)
-
+    
     if phone_number.strip().startswith('+'):
         return '+' + digits  
     if digits.startswith(COUNTRY_CODE):
